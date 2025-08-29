@@ -1,0 +1,19 @@
+package 'Concerns' {
+    public import StakeholdersLibrary::*;
+    public import ArgumentationStakeholdersConcerns::*;
+    public import BoundaryandContextStakeholdersConcerns::*;
+    public import CapabilityStakeholdersConcerns::*;
+    public import ExchangeandInterfaceStakeholdersConcerns::*;
+    public import FunctionalStakeholdersConcerns::*;
+    public import InteractionStakeholdersConcerns::*;
+    public import MetaFrameworkStakeholdersConcerns::*;
+    public import OrganizationStakeholdersConcerns::*;
+    public import ReliabilityStakeholdersConcerns::*;
+    public import RequirementStakeholdersConcerns::*;
+    public import StakeholdersConcerns::*;
+    public import StoryStakeholderConcerns::*;
+    public import StructureStakeholderConcerns::*;
+    public import TermsStandardsStakeholderConcerns::*;
+    public import TraceabilityMappingStakeholderConcerns::*;
+    public import XConcernsStakeholdersConcerns::*;    
+}
