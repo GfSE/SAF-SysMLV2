@@ -1,8 +1,8 @@
 package 'XConcernsStakeholdersConcerns' {
     public import StakeholdersLibrary::*;
     //private import Viewpoints::*;
-    
-    concern 'SecurityRequirements' {
+
+    concern 'SecurityRequirements'{
 	    doc /*
 	    * What are the Security Requirements?
 	    */
