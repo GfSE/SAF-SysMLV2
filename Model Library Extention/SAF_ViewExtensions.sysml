@@ -23,7 +23,7 @@ library package SAF_ViewExtensions {
         */
         satisfy SecurityRiskAnalysisViewpoint;
     } 
-}
+
    /*
     view def SAF_C2_CSTD :>
     view def SAF_C2_CSTD_Table :>
@@ -33,7 +33,13 @@ library package SAF_ViewExtensions {
     view def SAF_C7_PRND_Table :>
     view def SAF_Diagram :>
     view def SAF_Example :>
-    view def SAF_F1_SCXD :>
+    */
+    view def SAF_F1_SCXD specializes GeneralView{
+        doc /**/
+        satisfy SystemContextDefinitionViewpoint;
+    }
+
+    /*
     view def SAF_F1_SCXD_Table :>
     view def SAF_F1_SCXE :>
     view def SAF_F1_SCXE_Table :>
@@ -92,3 +98,4 @@ library package SAF_ViewExtensions {
     view def SAF_P8_PLOM_Matrix :>
 }
 */
+}
