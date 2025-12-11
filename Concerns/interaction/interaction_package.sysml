@@ -2,6 +2,7 @@ package 'InteractionStakeholdersConcerns' {
     public import StakeholdersLibrary::*;
    
 	concern 'PhysicalSystemInteractions' {
+		subject;
 	    doc /*
 	    * How do the physical system elements interact to provide the system function?
 	    */
@@ -12,6 +13,7 @@ package 'InteractionStakeholdersConcerns' {
 	}
 	
 	concern 'LogicalSystemInteractions' {
+		subject;
 	    doc /*
 	    * How do the logical system elements interact to provide the system functions?
 	    */
@@ -23,6 +25,7 @@ package 'InteractionStakeholdersConcerns' {
 	}
 	
 	concern 'PhysicalInteractionSequence' {
+		subject;
 	    doc /*
 	    * What is the sequence of interactions among the system and context elements on physical level?
 	    */
@@ -43,6 +46,7 @@ package 'InteractionStakeholdersConcerns' {
 	}
 	
 	concern 'ResponseTimeRequirements' {
+		subject;
 	    doc /*
 	    * What is the necessary response time for an interface or a service?
 	    */
@@ -61,6 +65,7 @@ package 'InteractionStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalProcessThreads' {
+		subject;
 	    doc /*
 	    * What possible threads of operational process activities have to be carried out to achieve the operational story main and alternative goals?
 	    */

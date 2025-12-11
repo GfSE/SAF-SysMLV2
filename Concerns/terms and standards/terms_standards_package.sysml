@@ -2,6 +2,7 @@ package 'TermsStandardsStakeholderConcerns' {
     public import StakeholdersLibrary::*;
     
 	concern 'ApplicableStandards' {
+		subject;
 	    doc /*
 	    * Which standards, guidance, and policy are applicable to the system of interest or its system elements and their interfaces and interactions?
 	    */
@@ -12,6 +13,7 @@ package 'TermsStandardsStakeholderConcerns' {
 	}
 	
 	concern 'ApplicableStandardsReleases' {
+		subject;
 	    doc /*
 	    * Which are the relevant releases of the applicable standards, guidance, and policy to be used for the development of the system of interest and its system elements?
 	    */
@@ -20,6 +22,7 @@ package 'TermsStandardsStakeholderConcerns' {
 	}
 	
 	concern 'ReferencedStandards' {
+		subject;
 	    doc /*
 	    * Which other standards are referenced or referred to by applicable standards?
 	    */
@@ -35,6 +38,7 @@ package 'TermsStandardsStakeholderConcerns' {
 	}
 	
 	concern 'ApplicableTermsAndAbbreviations' {
+		subject;
 	    doc /*
 	    * Which terms and abbreviations are applicable to the system of interest or its system elements and their interfaces and interactions?
 	    */
@@ -47,6 +51,7 @@ package 'TermsStandardsStakeholderConcerns' {
 	}
 	
 	concern 'SourcesOfTerms' {
+		subject;
 	    doc /*
 	    * What are the sources (e.g., a standard) of terms?
 	    */
@@ -58,6 +63,7 @@ package 'TermsStandardsStakeholderConcerns' {
 	}
 	
 	concern 'SupersedingStandards' {
+		subject;
 	    doc /*
 	    * By which standard is another standard superseded?
 	    */

@@ -3,6 +3,7 @@ package 'RequirementStakeholdersConcerns' {
     
 
 	concern 'NonFunctionalRequirements' {
+		subject;
 	    doc /*
 	    * What are the non-functional requirements imposed on the system?
 	    */
@@ -44,6 +45,7 @@ package 'RequirementStakeholdersConcerns' {
 	}
 	
 	concern 'FunctionalRequirements' {
+		subject;
 	    doc /*
 	    * What are the functional requirements imposed on the system?
 	    */

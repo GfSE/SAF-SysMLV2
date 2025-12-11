@@ -8,6 +8,7 @@ package 'StoryStakeholderConcerns' {
 	}
 
 	concern 'SystemPurpose' {
+		subject;
 	    doc /*
 	    * For what purpose is the system developed or adapted?
 	    */
@@ -18,6 +19,7 @@ package 'StoryStakeholderConcerns' {
 	}
 	
 	concern 'OperationalScenarios' {
+		subject;
 	    doc /*
 	    * Which is the operational scenario, i.e., course of action, for the mission and the context in which the system of systems solution will exist?
 	    */

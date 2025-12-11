@@ -2,6 +2,7 @@ package 'CapabilityStakeholdersConcerns' {
     public import StakeholdersLibrary::*;
     public import Viewpoints::*;
     	concern 'OperationalCapabilitiesDefined' {
+		subject;	
 	    doc /*
 	    * What operational capabilities are defined?
 	    */
@@ -13,6 +14,7 @@ package 'CapabilityStakeholdersConcerns' {
 	}
 	
 	concern 'SystemSupportedCapabilities' {
+		subject;
 	    doc /*
 	    * What are the capabilities that are supported by the system?
 	    */
@@ -23,6 +25,7 @@ package 'CapabilityStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalCapabilitiesPerPhase' {
+		subject;
 	    doc /*
 	    * What operational capabilities are required for each phase and mode of operation?
 	    */

@@ -2,6 +2,7 @@ package 'StructureStakeholderConcerns' {
     public import StakeholdersLibrary::*;
 	
 	concern 'LogicalSystemBreakdown' {
+		subject;
 	    doc /*
 	    * What is the logical breakdown of the system?
 	    */
@@ -10,6 +11,7 @@ package 'StructureStakeholderConcerns' {
 	}
 	
 	concern 'PhysicalSystemBreakdown' {
+		subject;
 	    doc /*
 	    * What is the physical breakdown of the system?
 	    */

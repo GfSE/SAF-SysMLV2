@@ -2,6 +2,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     public import StakeholdersLibrary::*;
     
     concern 'LogicalArchitectureItems' {
+        subject;
         doc /*
          * Which kind of conceptual items (energy, material, information, etc.) 
          * are used in the logical architecture of the system?
@@ -17,6 +18,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalInterfaceItems' {
+        subject;
         doc /*
          * Which kind of physical items (energy, material, information, etc.) 
          * are used on an interface of a physical architecture element?
@@ -31,6 +33,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalInteractionForFunctions' {
+        subject;
         doc /*
          * How do physical system elements interact to provide system functions?
          */
@@ -43,6 +46,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'ExternalPhysicalExchanges' {
+        subject;
         doc /*
          * Which kind of physical items (energy, material, information, etc.) 
          * are exchanged between the system and external entities?
@@ -53,6 +57,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'InternalConceptualExchanges' {
+        subject;
         doc /*
          * Which conceptual items (energy, material, information, etc.) 
          * are exchanged within the system?
@@ -67,6 +72,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalInterfaceStandards' {
+        subject;
         doc /*
          * Which standards, protocols, and format specifications apply to a physical interface?
          */
@@ -81,6 +87,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'InformationExchangeProtocols' {
+        subject;
         doc /*
          * Which are the protocols used for exchanging information?
          */
@@ -90,6 +97,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'ExternalConceptualExchanges' {
+        subject;
         doc /*
          * Which kind of conceptual items (energy, material, information, etc.) 
          * are exchanged between the system and external entities?
@@ -108,6 +116,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalExchangeProtocols' {
+        subject;
         doc /*
          * Which are the protocols for exchanging physical items on a specific interface?
          */
@@ -121,6 +130,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalArchitectureItems' {
+        subject;
         doc /*
          * Which kind of physical items (energy, material, information, etc.) 
          * are used in the physical architecture of the system?
@@ -134,6 +144,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'InternalPhysicalExchanges' {
+        subject;
         doc /*
          * Which physical items (energy, material, information, etc.) 
          * are exchanged within the system?
@@ -148,6 +159,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalElementInterfaces' {
+        subject;
         doc /*
          * What are the interface definitions for physical elements?
          */
@@ -155,6 +167,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'LogicalArchitectureInterfaces' {
+        subject;
         doc /*
          * Which are the interface definitions for the logical architecture?
          */
@@ -163,6 +176,7 @@ package 'ExchangeandInterfaceStakeholdersConcerns' {
     }
 
     concern 'PhysicalArchitectureInterfaces' {
+        subject;
         doc /*
          * Which are the interface definitions for the physical architecture?
          */

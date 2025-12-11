@@ -1,8 +1,6 @@
 	package SystemContextDefinitionViewpoint {
     public import StakeholdersLibrary::*;
     public import Concerns::*;
-    public import StakeholdersLibrary::*;
-    public import Concerns::*;
     
         viewpoint 'SystemContextDefinitionViewpoint' {  
             frame EmbeddedContexts;

@@ -2,6 +2,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
     public import StakeholdersLibrary::*;
     
     concern 'DerivedSystemRequirements' {
+		subject;
 	    doc /*
 	    * Which System Requirements are derived from Stakeholder Requirements?
 	    */
@@ -11,6 +12,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'OperationalCapabilityRelationships' {
+		subject;
 	    doc /*
 	    * Show in a concise manner the relationships from operational capability to operational story, to operational activity, and to operational performer.
 	    */
@@ -22,6 +24,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'SystemFunctionScenarios' {
+		subject;
 	    doc /*
 	    * What are the scenarios a system function is utilized in?
 	    */
@@ -44,6 +47,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'SystemFunctionAddressedByRequirement' {
+		subject;
 	    doc /*
 	    * Which system function is addressed by a system requirement?
 	    */
@@ -66,6 +70,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'OperationalProcessRelationships' {
+		subject;
 	    doc /*
 	    * Show in a concise manner the relationships from operational process to operational story and to operational performer.
 	    */
@@ -77,6 +82,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'FunctionToPhysicalArchitectureMapping' {
+		subject;
 	    doc /*
 	    * What is the mapping of functions to the physical SOI physical architecture?
 	    */
@@ -88,6 +94,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'SystemFunctionsDependentOnModes' {
+		subject;
 	    doc /*
 	    * Which system functions are dependent on a system's mode or state?
 	    */
@@ -96,6 +103,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'FunctionsAllocatedToLogicalArchitecture' {
+		subject;
 	    doc /*
 	    * Which functions are allocated to which parts of the logical architecture?
 	    */
@@ -106,6 +114,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'FunctionsAndServicesInSW' {
+		subject;
 	    doc /*
 	    * Which functions and services need to be implemented in SW?
 	    */
@@ -114,6 +123,7 @@ package 'TraceabilityMappingStakeholderConcerns' {
 	}
 	
 	concern 'LogicalToPhysicalMapping' {
+		subject;
 	    doc /*
 	    * Which logical elements are allocated to which physical elements?
 	    */

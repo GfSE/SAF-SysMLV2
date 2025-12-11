@@ -8,6 +8,7 @@ package 'ReliabilityStakeholdersConcerns' {
 	}
 	
 	concern 'FunctionAllocatedReliability' {
+		subject;
 	    doc /*
 	    * What is the allocated reliability for a single function?
 	    */
@@ -21,6 +22,7 @@ package 'ReliabilityStakeholdersConcerns' {
 	}
 	
 	concern 'ItemAllocatedReliability' {
+		subject;
 	    doc /*
 	    * What is the allocated reliability for the complete item?
 	    */

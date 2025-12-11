@@ -1,19 +1,25 @@
 package 'BoundaryandContextStakeholdersConcerns' {
     public import StakeholdersLibrary::*;
-    
+
+
     concern 'SupportedUsers' {
+		subject;
 	    doc /*
 	    * Which users does the system support?
 	    */
-	    stakeholder user: 'StakeholdersLibrary'::User;
+		
+	    stakeholder user: StakeholdersLibrary::User;
 	    stakeholder systemArchitect: 'StakeholdersLibrary'::SystemArchitect;
 	    stakeholder operator: 'StakeholdersLibrary'::Operator;
 	    stakeholder ivvEngineer: 'StakeholdersLibrary'::IVVEngineer;
-	    // viewpoint 'SystemUseCaseViewpoint';
+	    viewpoint 'SystemUseCaseViewpoint';
 	}
+
+	
 	
 	concern 'OperationalExchanges' {
-	    doc /*
+	    subject;
+		doc /*
 	    * What types of exchange can exist between Operational Performers (i.e., flows of information, people, material, or energy)?
 	    */
 	    stakeholder acquirer: 'StakeholdersLibrary'::Acquirer;
@@ -26,6 +32,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'ExternalPhysicalEntities' {
+		subject;
 	    doc /*
 	    * Which are the external physical entities the system interacts with in the given context?
 	    */
@@ -40,6 +47,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'SystemInteractions' {
+		subject;
 	    doc /*
 	    * How is the system interacting with the identified external entities?
 	    */
@@ -48,6 +56,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'ConceptualInterfaces' {
+		subject;
 	    doc /*
 	    * Which are the conceptual interfaces of the system?
 	    */
@@ -56,6 +65,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'SystemUtilization' {
+		subject;
 	    doc /*
 	    * How is the system being used or utilized and interacting with other external systems to satisfy user needs?
 	    */
@@ -70,6 +80,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'EmbeddedContexts' {
+		subject;
 	    doc /*
 	    * Which are the given contexts the system is embedded and utilized in?
 	    */
@@ -81,6 +92,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalContextExchanges' {
+		subject;
 	    doc /*
 	    * Which operational exchanges do operational performers need to consume or provide?
 	    */
@@ -93,6 +105,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'ExternalConceptualEntities' {
+		subject;
 	    doc /*
 	    * Which are the external conceptual entities the system interacts with in the given context?
 	    */
@@ -101,6 +114,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalContextStory' {
+		subject;
 	    doc /*
 	    * Which is the operational context to achieve an operational story?
 	    */
@@ -111,6 +125,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalEnvironment' {
+		subject;
 	    doc /*
 	    * What is the operational environment that an intended solution will need to support?
 	    */
@@ -118,6 +133,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'GeographicalLocations' {
+		subject;
 	    doc /*
 	    * Where and what are the geographical and physical locations of the intended or proposed elements of the solution?
 	    */
@@ -128,6 +144,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	}
 	
 	concern 'InterfacePartners' {
+		subject;
 	    doc /*
 	    * Which interface partners does the system have?
 	    */
@@ -138,5 +155,7 @@ package 'BoundaryandContextStakeholdersConcerns' {
 	    // viewpoint 'SystemContextDefinitionViewpoint';
 	    // viewpoint 'PhysicalContextDefinitionViewpoint';
 	}
+
+	
 }
 

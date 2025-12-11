@@ -8,6 +8,7 @@ package 'StakeholdersConcerns' {
 	}
 	
 	concern 'StakeholderInvolvementInLifecycle' {
+		subject;
 	    doc /*
 	    * In which phases of the life cycle is a Stakeholder involved in the project?
 	    */
@@ -17,6 +18,7 @@ package 'StakeholdersConcerns' {
 	}
 	
 	concern 'RelevantStakeholdersImposingRequirements' {
+		subject;
 	    doc /*
 	    * Which Stakeholders are relevant to the system and might impose requirements?
 	    */
@@ -28,6 +30,7 @@ package 'StakeholdersConcerns' {
 	}
 	
 	concern 'RelationsAndInfluencesBetweenStakeholders' {
+		subject;
 	    doc /*
 	    * What relevant relations and influences exist between Stakeholders?
 	    */
@@ -35,6 +38,7 @@ package 'StakeholdersConcerns' {
 	}
 	
 	concern 'MajorStakeholdersInSolution' {
+		subject;
 	    doc /*
 	    * Who are the (Major) Stakeholders involved in the intended solution?
 	    */
@@ -46,6 +50,7 @@ package 'StakeholdersConcerns' {
 	}
 	
 	concern 'StakeholderConcernsAndRationales' {
+		subject;
 	    doc /*
 	    * What concerns and rationales does a Stakeholder have?
 	    */

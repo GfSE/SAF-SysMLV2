@@ -3,6 +3,7 @@ package 'XConcernsStakeholdersConcerns' {
     //private import Viewpoints::*;
 
     concern 'SecurityRequirements'{
+		subject;
 	    doc /*
 	    * What are the Security Requirements?
 	    */
@@ -11,6 +12,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 	
 	concern 'SecurityMeasures' {
+		subject;
 	    doc /*
 	    * What are the Security Measures?
 	    */
@@ -19,6 +21,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 	
 	concern 'AssetsNeedingProtection' {
+		subject;
 	    doc /*
 	    * What are the assets that need protection?
 	    */
@@ -28,6 +31,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 	
 	concern 'AttackVectors' {
+		subject;
 	    doc /*
 	    * What are the Attack Vectors?
 	    */
@@ -38,6 +42,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 	
 	concern 'PotentialAdversaries' {
+		subject;
 	    doc /*
 	    * Who are the potential adversaries?
 	    */
@@ -48,6 +53,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 	
 	concern 'ContextAssumptions' {
+		subject;
 	    doc /*
 	    * What are the Assumptions regarding the context elements?
 	    */
@@ -56,6 +62,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 	
     concern 'SeverityOfLoss' {
+		subject;
 	    doc /*
 	    * Which severity has the Loss of the Security Objectives?
 	    */
@@ -64,6 +71,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}	
 	
 	concern 'ExistingAttackPaths' {
+		subject;
     	doc /*
     	* Which attack paths exists?
     	*/
@@ -73,6 +81,7 @@ package 'XConcernsStakeholdersConcerns' {
 	}
 
     concern 'AttackPaths' {
+		subject;
         doc /*
         * How are attack paths used?
         */
@@ -81,6 +90,7 @@ package 'XConcernsStakeholdersConcerns' {
     }
 
     concern 'Risk' {
+		subject;
     	doc /*
     	* How high is the Risk?
     	*/
@@ -90,6 +100,7 @@ package 'XConcernsStakeholdersConcerns' {
     	}    
 
     concern 'LikelihoodRiskScenario' {
+		subject;
         doc /*
         * What is the likelihood of a risk szenario?
         */

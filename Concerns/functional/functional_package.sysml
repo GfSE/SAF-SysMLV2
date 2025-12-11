@@ -2,6 +2,7 @@ package 'FunctionalStakeholdersConcerns' {
     public import StakeholdersLibrary::*;
     
 	concern 'SystemServices' {
+		subject;
 	    doc /*
 	     * Which services will the system provide?
 	     */
@@ -19,6 +20,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'SystemFunctions' {
+		subject;
 	    doc /*
 	     * Which functions will the system provide?
 	     */
@@ -36,6 +38,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'NecessarySystemInputs' {
+		subject;
 	    doc /*
 	     * What are necessary inputs for operating the system expected to be provided by other external entities?
 	     */
@@ -50,6 +53,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalActivities' {
+		subject;
 	    doc /*
 	     * Which operational activity shall be executed by which operational performer in the operational story?
 	     */
@@ -60,6 +64,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'SystemFunctionBreakdown' {
+		subject;
 	    doc /*
 	     * What is the breakdown of functions into sub-functions?
 	     */
@@ -69,6 +74,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'SystemFunctionDecomposition' {
+		subject;
 	    doc /*
 	     * How are the system functions decomposed into smaller, and more manageable sub-functions?
 	     */
@@ -77,6 +83,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'ExpectedExternalServices' {
+		subject;
 	    doc /*
 	     * What services are expected from external entities?
 	     */
@@ -96,6 +103,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'SystemFunctionEnviromentInteraction' {
+		subject;
 	    doc /*
 	     * How does a system function interact with its environment?
 	     */
@@ -124,6 +132,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'SystemModes' {
+		subject;
 	    doc /*
 	     * Which modes and states does the system have?
 	     */
@@ -139,6 +148,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'OperationalProcessActivities' {
+		subject;
 	    doc /*
 	     * What operational process activities shall be executed during the execution of an operational story?
 	     */
@@ -149,6 +159,7 @@ package 'FunctionalStakeholdersConcerns' {
 	}
 	
 	concern 'SystemFunctionsTesting' {
+		subject;
 	    doc /*
 	     * Which system functions need to be tested in IV&V activities?
 	     */

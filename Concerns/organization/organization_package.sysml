@@ -3,6 +3,7 @@ package 'OrganizationStakeholdersConcerns' {
     
 
 	concern 'EnvironmentalConditions' {
+		subject;
 	    doc /*
 	    * What are the normal and extreme environmental conditions for normal operation, for not operational, for storage, and for transport?
 	    */
@@ -20,6 +21,7 @@ package 'OrganizationStakeholdersConcerns' {
 	}
 	
 	concern 'RelationshipsBetweenParties' {
+		subject;
 	    doc /*
 	    * What are the relationships between the parties involved in the operation of the intended solution?
 	    */
@@ -30,6 +32,7 @@ package 'OrganizationStakeholdersConcerns' {
 	}
 	
 	concern 'PerformersAndResources' {
+		subject;
 	    doc /*
 	    * Which performers or resources are necessary to operate the intended solution?
 	    */
