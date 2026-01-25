@@ -6,6 +6,8 @@ library package SAF_ViewExtensions {
     public import Views::*;
     public import StandardViewDefinitions::*;
     public import Viewpoints::*;
+    public import SystemContextDefinitionViewpoint::*;
+    public import SystemContextExchangeViewpoint::*;
 
     view def <xxx> SAF_C2_CSTD specializes GeneralView{
         doc /*
