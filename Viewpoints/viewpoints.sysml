@@ -116,34 +116,10 @@ package Viewpoints {
 	    }
 	}
 	
-	viewpoint 'SystemContextExchangeViewpoint' {  
-	    frame ConceptualInterfaces;
-	    frame ExternalConceptualEntities;
-	    frame SystemInteractions;
-	    frame ExternalConceptualExchanges;
-	    frame InterfaceRequirements;
-	    frame LogicalInterfaceRequirements;
-	
-	    require constraint {
-	        doc /*  */
-	    }
-	}
-	
 	viewpoint 'SystemContextInteractionViewpoint' {  
 	    frame SystemUtilization;
 	    frame ResponseTimeRequirements;
 	    frame ConceptualInteractionSequence;
-	
-	    require constraint {
-	        doc /*  */
-	    }
-	}
-	
-	viewpoint 'SystemContextDefinitionViewpoint' {  
-	    frame EmbeddedContexts;
-	    frame GeographicalLocations;
-	    frame ExternalConceptualEntities;
-	    frame InterfacePartners;
 	
 	    require constraint {
 	        doc /*  */

@@ -35,12 +35,43 @@ library package SAF_ViewExtensions {
     view def SAF_Example :>
     */
     view def SAF_F1_SCXD specializes GeneralView{
-        doc /**/
+        doc /*Purpose
+            The System Context Definition Viewpoint defines how the SOI is embedded in its environment, i.e., where the boundary of the SOI is and who the external entities are the SOI interacts with (e.g., users, other external systems, environmental conditions, etc.). In addition, the System Context Definition Viewpoint serves as architecture concept to demonstrate how the architecture description defined in the Operational Context Definition Viewpoint is realized. 
+            Applicability
+            The System Context Definition Viewpoint supports the “prepare for system requirement definition” activity included in the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.3] and contributes to the artifact “System Requirements Definition Report”.
+            */
         satisfy SystemContextDefinitionViewpoint;
     }
 
+    
+    view def SAF_F1_SCXD_Table specializes GridView{
+        doc /*Purpose
+            The System Context Definition Viewpoint defines how the SOI is embedded in its environment, i.e., where the boundary of the SOI is and who the external entities are the SOI interacts with (e.g., users, other external systems, environmental conditions, etc.). In addition, the System Context Definition Viewpoint serves as architecture concept to demonstrate how the architecture description defined in the Operational Context Definition Viewpoint is realized. 
+            Applicability
+            The System Context Definition Viewpoint supports the “prepare for system requirement definition” activity included in the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.3] and contributes to the artifact “System Requirements Definition Report”.
+            */
+        satisfy SystemContextDefinitionViewpoint;
+    } 
+
+    view def SAF_F1_SCXE specializes GeneralView{
+        doc /*Purpose
+            The System Context Definition Viewpoint defines how the SOI is embedded in its environment, i.e., where the boundary of the SOI is and who the external entities are the SOI interacts with (e.g., users, other external systems, environmental conditions, etc.). In addition, the System Context Definition Viewpoint serves as architecture concept to demonstrate how the architecture description defined in the Operational Context Definition Viewpoint is realized. 
+            Applicability
+            The System Context Definition Viewpoint supports the “prepare for system requirement definition” activity included in the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.3] and contributes to the artifact “System Requirements Definition Report”.
+            */
+        satisfy SystemContextExchangeViewpoint;
+    }
+
+    
+    view def SAF_F1_SCXE_Table specializes GridView{
+        doc /*Purpose
+            The System Context Definition Viewpoint defines how the SOI is embedded in its environment, i.e., where the boundary of the SOI is and who the external entities are the SOI interacts with (e.g., users, other external systems, environmental conditions, etc.). In addition, the System Context Definition Viewpoint serves as architecture concept to demonstrate how the architecture description defined in the Operational Context Definition Viewpoint is realized. 
+            Applicability
+            The System Context Definition Viewpoint supports the “prepare for system requirement definition” activity included in the “System Requirements Definition Process” activities of the INCOSE SYSTEMS ENGINEERING HANDBOOK 2023 [§2.3.5.3] and contributes to the artifact “System Requirements Definition Report”.
+            */
+        satisfy SystemContextExchangeViewpoint;
+    }
     /*
-    view def SAF_F1_SCXD_Table :>
     view def SAF_F1_SCXE :>
     view def SAF_F1_SCXE_Table :>
     view def SAF_F1_SUCD :>
