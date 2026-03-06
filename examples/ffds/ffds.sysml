@@ -5,15 +5,13 @@ package FFDS_Definition {
     public import SAF::*;
     public import FFDS_InterfaceDefs::*;
 
-    part def FireDetectionData;
-
-    part def AlertNotification;
-
     part def FFDS specializes SAF_System {
 
-        port satelliteIn : FireDataInPort;
+        port SatelliteImageDataIn : SatelliteImageDataInPort;
 
-        port alertOut : AlertOutPort;
+        port FireAlertReportOut : FireAlertReportOutPort;
+
+        port FireDangerReportOut : FireDangerReportOutPort;
     }
 }
 
@@ -24,8 +22,33 @@ package Satellite_System_Definition{
 
     part def Satellite_System specializes SAF_System{
 
-        port dataOut : FireDataOutPort;
+        port SatelliteImageDataOut : SatelliteImageDataOutPort;
     }
+}
+
+package Fire_Department_System_Definition{
+
+    public import SAF::*;
+    public import FFDS_InterfaceDefs::*;
+
+    part def Fire_Department_System specializes SAF_System{
+
+        port FireAlertReportIn : FireAlertReportInPort;
+    }
+}
+
+package Research_Analysis_System_Defintion{
+    
+    public import SAF::*;
+
+    part def Research_Analysis_System specializes SAF_System;
+}
+
+package Meteorology_System_Definition{
+    
+    public import SAF::*;
+
+    part def Meteorology_System specializes SAF_System;
 }
 
 package Operators_Definition {
@@ -35,7 +58,7 @@ package Operators_Definition {
 
     part def Operator specializes SAF_User {
 
-        port alertIn : AlertInPort;
+        port FireDangerReportIn : FireDangerReportInPort;
     }
 
     part def Administrator specializes SAF_User;
@@ -53,16 +76,14 @@ package FFDS_Context_Definition {
     public import Operators_Definition::*;
     public import FFDS_DomainItems::*;
     public import FFDS_InterfaceDefs::*;
+    public import Fire_Department_System_Definition::*;
+    public import Research_Analysis_System_Defintion::*;
+    public import Meteorology_System_Definition::*;
+    
 
     part def Fire specializes SAF_Environment;
 
     part def Climate specializes SAF_Environment;
-
-    part def Research_Analysis_System specializes SAF_System;
-
-    part def Fire_Department_System specializes SAF_System;
-
-    part def Meteorology_System specializes SAF_System;
 
     part def FFDS_Context specializes SAF_SystemContext {
 
@@ -80,18 +101,20 @@ package FFDS_Context_Definition {
         part administrator : Administrator;
         part maintainer : Maintainer;
 
-        //connections
-        connection ffdsToOperator connect ffds.alertOut to operator.alertIn {
-            flow from ffds.alertOut to operator.alertIn {
-                item payload : AlertNotification;
+
+        // check syntax with specification
+        connection satToFfds connect satellite.SatelliteImageDataOut to ffds.SatelliteImageDataIn {
+            flow from satellite.SatelliteImageDataOut to ffds.SatelliteImageDataIn {
+                item payload : SatelliteImageData;
             }
         }
 
-        connection satToFfds connect satellite.dataOut to ffds.satelliteIn {
-            flow from satellite.dataOut to ffds.satelliteIn {
-                item payload : FireDetectionData;
-            }
+        // interfaces connecting ports of context elements (parts)
+        interface ffdsToOperator connect ffds.FireDangerReportOut to operator.FireDangerReportIn{
+            flow of payload: FireDangerReport from ffds.FireDangerReportOut to operator.FireDangerReportIn;
         }
+        
+        //connection ffdsToFireDepartSys connect 
 
     }
 }
